@@ -59,6 +59,7 @@ public class POMParser extends DefaultHandler {
 				| IllegalArgumentException | IllegalAccessException
 				| InstantiationException e) {
 			e.printStackTrace();
+			throw new SAXException();
 		}
 	}
 	
@@ -135,6 +136,7 @@ public class POMParser extends DefaultHandler {
 		} catch (IllegalArgumentException | IllegalAccessException
 				| NoSuchFieldException | SecurityException e) {
 			e.printStackTrace();
+			throw new SAXException();
 		}
 	}
 	
