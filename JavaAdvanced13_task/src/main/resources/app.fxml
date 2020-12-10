@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml"
+	stylesheets="app.css" fx:controller="ua.itea.App"
+	styleClass="grid-pane">
+	<children>
+		<Text GridPane.columnIndex="0" GridPane.rowIndex="0"
+			GridPane.halignment="RIGHT" text="Login:" styleClass="text" />
+		<Text GridPane.columnIndex="0" GridPane.rowIndex="1"
+			GridPane.halignment="RIGHT" text="Password:" styleClass="text" />
+		<TextField fx:id="loginField" GridPane.columnIndex="1"
+			GridPane.rowIndex="0" promptText="login" styleClass="field" />
+		<PasswordField fx:id="passwordField"
+			GridPane.columnIndex="1" GridPane.rowIndex="1" promptText="password" />
+		<Button fx:id="confirmButton" GridPane.columnIndex="1"
+			GridPane.rowIndex="2" GridPane.halignment="RIGHT" text="Confirm" />
+	</children>
+</GridPane>

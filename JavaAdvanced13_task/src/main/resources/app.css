@@ -1,0 +1,9 @@
+.root {
+	-fx-padding: 10px;
+}
+
+.grid-pane {
+	-fx-hgap: 5px;
+	-fx-vgap: 5px;
+	-fx-grid-lines-visible: false;
+}
